@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<style>
+	
+	button{
+
+        font-size: 20px;
+	background-color: #09F;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left:5px;
+    }
+    
+    </style>
+
+<body>
+<h1 align="center">Globo SP</h1>
+
+<!-- Paste the following into the <head>  -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<style>
+ #clappr{ width: 100%;height: 100%;position: relative; min-height: 320px; margin-bottom: 25px;}
+ #clappr > div{ width:100%;height:100%;position: absolute;}
+</style>
+<!-- Paste the following into the <body> -->
+<div id="clappr"></div>
+<script>
+ var player = new Clappr.Player({
+  source:
+       "http://edge.aovivo.club/hls/s:95.216.15.44:81/globosp_cfe21c68_6b554e96d2abfccc66849672a570162d4a4f3a33/playlist.m3u8"
+   ,
+    parentId: "#clappr",
+  width: '100%',
+  height: '100%',
+  autoPlay: false,
+    //gaAccount: 'UA-44332211-1',
+  //gaTrackerName: 'MyPlayerInstance'
+  });
+</script>
+
+<div align="center">
+    <button onclick="location.href= 'https://minhaads.github.io/globondt01.html'"><b>01</b></button>
+    <button onclick="location.href= 'https://minhaads.github.io/globondt02.html'"><b>02</b></button>
+    <button onclick="location.href= 'https://minhaads.github.io/globondt03.html'"><b>03</b></button>
+</div>
+</body>
+</html>
